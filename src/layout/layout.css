@@ -1,0 +1,65 @@
+/* iPhone SE - 1*/
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(16px, auto) 1fr  minmax(16px, auto);
+    grid-template-rows: 56px 1px 1fr 746px;
+    grid-template-areas: 
+        ". header ."
+        "header_line header_line header_line"
+        ". content ."
+        "footer footer footer"
+    ;
+}
+
+/*iPhone 11 Pro Max - 2*/
+@media (min-width: 414px) {
+    .layout {
+        grid-template-columns: minmax(20px, auto) 1fr minmax(20px, auto);
+        grid-template-rows: 72px 1px 1fr 746px;
+    }
+}  
+
+/*iPad mini - 2*/
+@media (min-width: 768px) {
+    .layout {
+        grid-template-rows: 76px 1px 1fr 454px;
+    }
+}  
+
+/*iPad Pro 12.9" - 1*/
+@media (min-width: 1024px) {
+    .layout {
+        grid-template-columns: minmax(32px, auto) 1fr minmax(32px, auto);
+        grid-template-rows: 76px 1px 1fr 302px;
+    }
+}  
+
+/*full screen*/
+@media (min-width: 1440px) {
+    .layout {
+        grid-template-columns: minmax(120px, auto) 1fr minmax(120px, auto);
+        
+    }
+}  
+
+.header {
+    grid-area: header;
+  
+}
+
+.header-line  {
+    grid-area: header_line;
+    background-color: rgba(239, 245, 251, 1);
+}
+
+.content {
+    grid-area: content;
+    
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgba(41, 99, 163, 1);
+    
+}

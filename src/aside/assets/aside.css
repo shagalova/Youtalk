@@ -1,0 +1,343 @@
+.aside {
+    
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 16px;
+}
+
+.aside__first-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aside__last-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.aside button {
+    width: 100%;
+    background-color: rgba(53, 179, 169, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.aside img {
+    width: 100%;
+    height: auto;
+}
+
+
+.windows {
+    background-color: rgba(230, 240, 253, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 24px 24px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+}
+.windows__img img {
+    width: 257px;
+    height: 206px;
+}
+.windows__title {
+    text-align: center;
+    padding-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.windows__text {
+    text-align: center;
+}
+
+
+
+
+.psycho {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 16px;
+    box-shadow: 0px 30px 50px 0px rgba(239, 245, 251, 1);
+
+}
+
+.psycho__notes {
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+.psycho__notes div {
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(243, 244, 248, 0.7);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 6px;
+    padding-left: 26px;
+
+}
+
+.psycho__ava {
+    display: flex;
+    justify-content: center;
+    margin-top: -64px;
+}
+
+.psycho__ava img {
+    width: 120px;
+    height: 120px;
+}
+.psycho__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    align-self: center;
+}
+.psycho__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.psycho__psycho {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.psycho__experience {
+    color: rgba(162, 167, 177, 1);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.psycho__experience img {
+    width: 4px;
+    height: 4px;
+    margin: auto 0;
+}
+.psycho__line {
+    width: 100%;
+    height: 1px;
+    box-shadow: 0px 1px 0px 0px rgba(222, 222, 222, 1);
+    
+}
+
+.psycho__description_text {
+    text-align: center;
+}
+.psycho__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.psycho__list ul {
+    list-style-image: url("./icons/li.svg");
+    list-style-position: inside;
+    padding-left: 6px;
+}
+
+.psycho__list ul li{
+    padding-top: 8px;
+}
+
+.gifts {
+    width: 288px;
+    height: 292px;
+    border: none;
+    border-radius: 16px;
+    background-image: url("./images/img15.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.videos {
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 24px;
+}
+
+.videos__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(41, 99, 163, 1);
+}
+
+
+.videos span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.videos__cost {
+    width: 108px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.videos img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.aside__bg-pink {
+    display: none;
+    margin-top: 500px;
+    margin-right: -120px;
+    height: 500px;
+}
+
+.aside__bg-pink img {
+    height: 100%;
+}
+
+
+/*iPhone 11 Pro Max - 2*/
+@media (min-width: 414px) {
+    .windows {
+        padding: 24px 32px 44px;
+    }
+
+    .psycho {
+        padding-top: 24px; 
+        padding-bottom: 36px;
+    }
+    
+    .psycho__description {
+        width: 250px;
+    }
+
+    
+    .gifts {
+        width: 374px;
+    }
+
+    .videos {
+        padding: 24px;
+    }
+}
+
+/*iPad mini - 2*/
+@media (min-width: 768px) {
+    .aside {
+        gap: 36px;
+        padding-top: 23px;
+    }
+
+    .aside__first-2 {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .aside__last-2 {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .windows {
+        width: 50%;
+        padding: 24px;
+    }
+
+    .psycho {
+        width: 50%;
+    }
+
+    .gifts {
+        width: 50%;
+        height: 248px;
+        background-image: url("./images/img15-short.png");
+    }
+
+    .videos {
+        width: 50%;
+        height: 248px;
+    }
+}
+
+/*iPad Pro 12.9" - 1*/
+@media (min-width: 1024px) { 
+    .aside {
+        padding-top: 0;
+        width: 222px;
+    }
+
+    .aside__first-2 {
+        flex-direction: column;
+    }
+
+    .aside__last-2 {
+        flex-direction: column;
+    }
+
+    .windows {
+        width: 100%;
+        padding: 24px 20px;
+    }
+
+    .psycho {
+        width: 100%;
+        padding: 16px 24px;
+    }
+
+    .psycho__description {
+        width: 174px;
+    }
+
+    .gifts {
+        width: 100%;
+        height: 292px;
+        background-image: url("./images/img15-shortest.png");
+    }
+
+    .videos {
+        width: 100%;
+        height: 308px;
+    }
+}
+
+/*full screen*/
+@media (min-width: 1440px) {
+    .aside {
+        width: 282px;
+    }
+    .aside__bg-pink {
+        display: block;
+    }
+}

@@ -1,0 +1,330 @@
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.article__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 32px;
+}
+
+.article__author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    gap: 8px;
+    color: rgba(73, 73, 73, 1);
+    
+}
+.article ul {
+    list-style-image: url("../aside/assets/icons/li.svg");
+    list-style-position: outside;
+    
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.article ul li {
+    font-weight: 500;
+    padding-left: 8px;
+    margin-left: 24px;
+    padding-top: 8px;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+}
+
+.article__content a {
+    text-decoration: underline;
+}
+
+.article h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.article__quote {
+    background-color: rgba(243, 247, 254, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    font-style: italic;
+
+    margin-top: 24px;
+}
+.article__quote_container {
+    background-image: url("./assets/icons/quote.svg");
+    background-repeat: no-repeat;
+}
+.article__quote_author {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+    padding-top: 8px;
+}
+.article__quote_text {
+    padding-top: 14px;
+}
+
+
+.article__ontogenesis p {
+    padding-top: 16px;
+    color: rgba(134, 134, 134, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.2px;
+    letter-spacing: 0.25px;
+}
+
+.article__pink-note {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    background-image: url("./assets/icons/pink.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.article__lady-in-hat {
+    position: relative;
+
+}
+
+.article__lady-in-hat p {
+    padding-top: 16px;
+}
+
+.article__hand-in-hand p {
+    padding-top: 16px;
+}
+
+.article__chair-and-stars {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.article__chair p {
+    padding-top: 16px;
+}
+
+.article__stars p {
+    padding-top: 16px;
+}
+
+.article__lightning_img {
+    display: flex;
+    justify-content: center;
+    
+}
+.article__lightning_img img {
+    width: auto;
+}
+.article__lightning p {
+    padding-top: 16px;
+}
+
+
+.article__exercise {
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+
+}
+.article__exercise h4 {
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+.article__exercise_blue {
+    background-color: rgba(3, 178, 165, 0.1);
+}
+.article__exercise_pink {
+    background-color: rgba(255, 243, 235, 1);
+}
+
+.article__links {
+    display: none;
+    color: rgba(41, 99, 163, 1);
+}
+
+/*iPhone 11 Pro Max - 2*/
+@media (min-width: 414px) {
+    .article__title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .article__img img{
+        height: 207px;
+        object-fit: cover;
+    }
+
+    .article h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .article__ontogenesis img {
+        height: 207px;
+        object-fit: cover;
+    }
+
+    .article__pink-note {
+        padding-top: 24px;
+    }
+
+    .article__lady-in-hat img {
+        height: 380px;
+        object-fit: cover;
+    }
+
+    .article__hand-in-hand img {
+        height: 207px;
+        object-fit: cover;
+    }
+
+    .article__chair img {
+        height: 235px;
+        object-fit: cover;
+    }
+
+    .article__stars img {
+        height: 235px;
+        object-fit: cover;
+    }
+
+}
+
+/*iPad mini - 2*/
+@media (min-width: 768px) {
+    .article {
+        gap: 24px;
+    }
+    .article__title {
+        font-size: 48px;
+        line-height: 56px;
+        padding-top: 54px;
+    }
+
+    .article__img img{
+        height: 331px;
+    }
+
+    .article__quote {
+        padding: 24px;
+    }
+
+    .article__ontogenesis img {
+        height: 331px;
+    }
+
+    .article__pink-note {
+        width: 485px;
+        align-self: center;
+        padding-bottom: 48px;
+    }
+    .article__lady-in-hat {
+        display: flex;
+        gap: 16px;
+    }
+    .article__lady-in-hat p {
+        padding-top: 0;
+    }
+    .article__lady-in-hat img {
+        height: 380px;
+    }
+
+    .article__hand-in-hand {
+        display: flex;
+        gap: 16px;
+    }
+
+    .article__hand-in-hand p {
+        padding-top: 0;
+    }
+
+    .article__hand-in-hand img {
+        width: 294px;
+        height: 182px;
+    }
+
+    .article__exercise {
+        padding: 24px;    
+    }
+
+    .article__chair-and-stars {
+        flex-direction: row;
+    }
+
+    .article__chair p {
+        padding-top: 24px;
+    }
+    
+    .article__stars p {
+        padding-top: 24px;
+    }
+
+    .article__lightning p {
+        padding-top: 24px;
+    }
+   
+}
+
+/*iPad Pro 12.9" - 1*/
+@media (min-width: 1024px) { 
+    .article-container {
+        flex-direction: row;
+        gap: 24px;
+    }
+    .article {
+        width: 714px;
+    }
+
+    .article__lady-in-hat {
+        gap: 24px;
+    }
+
+    .article__hand-in-hand {
+        gap: 24px;
+    }
+
+    .article__chair-and-stars {
+        gap: 24px;
+    }
+}
+
+/*full screen*/
+@media (min-width: 1440px) {
+    .article-container {
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 691px;
+    }
+
+    .article__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
